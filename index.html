@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thakur Homestay</title>
+
+    <!-- Linking Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Linking External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts  -->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container-fluid" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <div class="row">
+            <header class="header d-flex justify-content-between align-items-center py-4">
+                <a class="navbar-brand" href="#">
+                    <h1 class="brand-title">Thakur Homest<span>ay</span></h1>
+                </a>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Destinations</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Paris, France</a></li>
+                                    <li><a class="dropdown-item" href="#">Tokyo, Japan</a></li>
+                                    <li><a class="dropdown-item" href="#">Sydney, Australia</a></li>
+                                    <li><a class="dropdown-item" href="#">New York, USA</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Trip</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Weekend Getaway</a></li>
+                                    <li><a class="dropdown-item" href="#">Luxury Travel</a></li>
+                                    <li><a class="dropdown-item" href="#">Adventure Tours</a></li>
+                                    <li><a class="dropdown-item" href="#">Honeymoon Packages</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Travel Tips</a></li>
+                                    <li><a class="dropdown-item" href="#">Destination Guides</a></li>
+                                    <li><a class="dropdown-item" href="#">Packing Tips</a></li>
+                                    <li><a class="dropdown-item" href="#">Travel Stories</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+
+        <!-- Banner Section -->
+        <div class=" row banner-section d-flex justify-content-center align-items-center text-center py-5">
+            <div>
+                <p class="banner-subheading fs-3 text-white">BEST CHOICE FOR FAMILY</p>
+                <h2 class="banner-heading text-white">COME AS A GUEST AND LEAVE AS A FRIEND</h2>
+                <div class="banner-btn-group mt-4">
+                    <button class="btn banner-btn-explore text-dark">Explore More</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Search Section -->
+        <div class="row search-section py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-3 mb-3">
+                    <input type="text" class="form-control input-search" placeholder="Destination" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <select class="form-control select-activity" required>
+                        <option value="" disabled selected>Activity</option>
+                        <option value="hiking">Hiking</option>
+                        <option value="swimming">Swimming</option>
+                        <option value="sightseeing">Sightseeing</option>
+                        <option value="trekking">Trekking</option>
+                    </select>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <input type="number" class="form-control input-days" placeholder="Days" min="1" required>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <input type="text" class="form-control input-price" placeholder="Price" disabled>
+                </div>
+                <div class="col-md-2 mb-3">
+                    <button type="submit" class="btn w-100 btn-search text-white">Search</button>
+                </div>
+            </div>
+        </div>
+        <!-- feature section  -->
+        <div class="row feature-row mx-5">
+            <div class="col-md-4 feature-item feature-live-nature">
+                <div class="feature-icon">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <h2>Live Amidst Nature</h2>
+                <p>Feel and experience nature in its fullest glory to refresh yourself.</p>
+            </div>
+            <div class="col-md-4 feature-item feature-heritage">
+                <div class="feature-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <h2>Heritage Homestay</h2>
+                <p>Experience the charm of Kerala heritage that has been preserved throughout the ages.</p>
+            </div>
+            <div class="col-md-4 feature-item feature-family-friendly">
+                <div class="feature-icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <h2>Family Friendly</h2>
+                <p>The calm and comfortable environment will make your family feel at home.</p>
+            </div>
+        </div>
+        <!-- Why Choose Us Section -->
+        <div class="container my-5">
+            <div class="row why-choose-us align-items-center">
+                <div class="col-md-6">
+                    <img src="./images/h3-banner-1.jpg" alt="Luxury Homestay" class="img-fluid rounded shadow-lg">
+                </div>
+                <div class="col-md-6 text-white">
+                    <h2 class="why-title">Why Choose Us</h2>
+                    <h4 class="why-subtitle">Some Words About Us</h4>
+                    <p class="why-description">
+                        We take pride in offering high-standard, friendly, and cheerful service, catering to the needs
+                        of your entire family.
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="why-feature-item">
+                                <i class="fas fa-wifi why-feature-icon"></i>
+                                <h5>Free High-Speed WiFi</h5>
+                            </div>
+                            <div class="why-feature-item">
+                                <i class="fas fa-bed why-feature-icon"></i>
+                                <h5>Well-Furnished Rooms</h5>
+                            </div>
+                            <div class="why-feature-item">
+                                <i class="fas fa-utensils why-feature-icon"></i>
+                                <h5>Well-Equipped Kitchen</h5>
+                            </div>
+                            <div class="why-feature-item">
+                                <i class="fas fa-swimming-pool why-feature-icon"></i>
+                                <h5>Swimming Pool</h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="why-feature-item">
+                                <i class="fas fa-parking why-feature-icon"></i>
+                                <h5>Parking</h5>
+                            </div>
+                            <div class="why-feature-item">
+                                <i class="fas fa-coffee why-feature-icon"></i>
+                                <h5>Free Breakfast</h5>
+                            </div>
+                            <div class="why-feature-item">
+                                <i class="fas fa-fire why-feature-icon"></i>
+                                <h5>Outdoor BBQ Area</h5>
+                            </div>
+                            <div class="why-feature-item">
+                                <i class="fas fa-paw why-feature-icon"></i>
+                                <h5>Animals & Pets Care</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Things To Do Section -->
+        <div class="row things-to-do-section align-items-center my-5 ">
+            <div class="col-md-6 things-content">
+                <h3 class="things-heading">Things To Do</h3>
+                <h4 class="things-subheading">All Activities at the Ami Homestay</h4>
+                <p class="things-description">
+                    Besides the explosion of color and life that characterizes our summer, the Principality invites
+                    you to enjoy many other experiences—R&R, culture, shopping, and gastronomy… A true pleasure for
+                    the senses.
+                </p>
+
+                <div class="row activity-list">
+                    <div class="col-md-6">
+                        <div class="activity-box">
+                            <i class="fas fa-fire"></i> Outdoor BBQ
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="activity-box">
+                            <i class="fas fa-campground"></i> Campfire
+                        </div>
+                    </div>
+                </div>
+                <div class="row activity-list">
+                    <div class="col-md-6">
+                        <div class="activity-box">
+                            <i class="fas fa-tree"></i> Nature Walk
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="activity-box">
+                            <i class="fas fa-hiking"></i> Outdoor Adventure
+                        </div>
+                    </div>
+                </div>
+                <div class="row activity-list">
+                    <div class="col-md-6">
+                        <div class="activity-box">
+                            <i class="fas fa-swimmer"></i> Lake Swimming
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="activity-box">
+                            <i class="fas fa-futbol"></i> Games & Sports
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="things-button">Find Out More</button>
+            </div>
+
+            <div class="col-md-6 things-images">
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./images/things-1.jpg" alt="BBQ" class="things-img">
+                    </div>
+                    <div class="col-6">
+                        <img src="./images/things-2.jpg" alt="Campfire" class="things-img">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="./images/things-3.jpg" alt="Nature Walk" class="things-img">
+                    </div>
+                    <div class="col-6">
+                        <img src="./images/things-4.jpg" alt="Swimming" class="things-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- enjoy section  -->
+        <div class="row enjoy d-flex text-center align-items-center">
+            <div class="col-md-12">
+                <h2 class="text-white">Relax and Enjoy </h2>
+                <h4 class="text-white fs-1">your Holiday</h4>
+            </div>
+        </div>
+        <!-- Accommodation Section -->
+        <div class="container my-5">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h2 class="accommodation-title">Accommodation</h2>
+                    <h4 class="accommodation-subtitle">Choose from a wide range of rooms</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Room Card -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="room-card">
+                    <img src="./images/room-8.jpg" class="room-img" alt="Double Room">
+                    <div class="room-info">
+                        <h4 class="room-title"><i class="fas fa-bed"></i> Double Room</h4>
+                        <p class="room-price">FROM <strong>$75.9</strong> / night</p>
+                        <button class="room-btn">VIEW DETAIL</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="room-card">
+                    <img src="./images/room-7.jpg" class="room-img" alt="Luxury Room">
+                    <div class="room-info">
+                        <h4 class="room-title"><i class="fas fa-star"></i> Luxury Room</h4>
+                        <p class="room-price">FROM <strong>$64.9</strong> / night</p>
+                        <button class="room-btn">VIEW DETAIL</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="room-card">
+                    <img src="./images/room-5.jpg" class="room-img" alt="Premium Room">
+                    <div class="room-info">
+                        <h4 class="room-title"><i class="fas fa-crown"></i> Premium Room</h4>
+                        <p class="room-price">FROM <strong>$53.9</strong> / night</p>
+                        <button class="room-btn">VIEW DETAIL</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="room-card">
+                    <img src="./images/room-3.jpg" class="room-img" alt="Classic Room">
+                    <div class="room-info">
+                        <h4 class="room-title"><i class="fas fa-archway"></i> Classic Room</h4>
+                        <p class="room-price">FROM <strong>$60.5</strong> / night</p>
+                        <button class="room-btn">VIEW DETAIL</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="room-card">
+                    <img src="./images/room-2.jpg" class="room-img" alt="Budget Room">
+                    <div class="room-info">
+                        <h4 class="room-title"><i class="fas fa-wallet"></i> Budget Room</h4>
+                        <p class="room-price">FROM <strong>$49.5</strong> / night</p>
+                        <button class="room-btn">VIEW DETAIL</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="room-card">
+                    <img src="./images/room-1.jpg" class="room-img" alt="Single Room">
+                    <div class="room-info">
+                        <h4 class="room-title"><i class="fas fa-user"></i> Single Room</h4>
+                        <p class="room-price">FROM <strong>$64.0</strong> / night</p>
+                        <button class="room-btn">VIEW DETAIL</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="row g-4 my-5">
+            <div class="col-md-6">
+                <div class="experience-box stay-dine">
+                    <div class="experience-content">
+                        <h2>STAY & DINE</h2>
+                        <h4>Great food for great memories</h4>
+                        <p>What's life without good food? Both our restaurants offer a variety of cuisine to try,
+                            cooked
+                            with fresh vegetables and herbs that you can pick from the farm.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="experience-box experience">
+                    <div class="experience-content">
+                        <h2>EXPERIENCE</h2>
+                        <h4>Anything but usual</h4>
+                        <p>Throw off all your worries and slip into the scenic, relaxed atmosphere and be pampered
+                            and
+                            rejuvenated.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Section -->
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="reviews-title">REVIEWS</h1>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active testimonial-item-1">
+                            <div class="testimonial-content">
+                                <h2>“The peaceful atmosphere and the natural beauty around made my stay unforgettable.”
+                                </h2>
+                                <p class="author">– John Doe</p>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                </div>
+                                <div class="testimonial-image-container">
+                                    <img src="./images/testimonials01.jpg" class="testimonial-image"
+                                        alt="testimonial image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item testimonial-item-2">
+                            <div class="testimonial-content">
+                                <h2>“A true escape from the hustle and bustle of city life. Highly recommend this
+                                    place.”</h2>
+                                <p class="author">– Jane Smith</p>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                </div>
+                                <div class="testimonial-image-container">
+                                    <img src="./images/testimonials01.jpg" class="testimonial-image"
+                                        alt="testimonial image">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item testimonial-item-3">
+                            <div class="testimonial-content">
+                                <h2>“An amazing experience with spectacular views. A must-visit destination.”</h2>
+                                <p class="author">– Emily Brown</p>
+                                <div class="stars">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                    <span class="star">&#9734;</span>
+                                </div>
+                                <div class="testimonial-image-container">
+                                    <img src="./images/testimonials01.jpg" class="testimonial-image"
+                                        alt="testimonial image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Section -->
+        <div class="row footer">
+            <div class="footer-column about-us">
+                <h3>About Us</h3>
+                <ul>
+                    <li>Things To Do</li>
+                    <li>Services</li>
+                    <li>Meet Our Team</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+            <div class="footer-column information">
+                <h3 class="text-uppercase">Information</h3>
+                <p>7882 Longbranch Rd Wooster, New York</p>
+                <p>Call for Reservations</p>
+                <h2>+(84) 4130 0555</h2>
+            </div>
+            <div class="footer-column quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li>Amenities</li>
+                    <li>Pricing</li>
+                    <li>Testimonials</li>
+                    <li>Blog</li>
+                </ul>
+            </div>
+            <div class="footer-column subscribe">
+                <h3>Don't Miss Our Latest Updates</h3>
+                <input type="text" class="form-control" placeholder="Enter Your Email">
+                <button type="button" class="btn submit-btn">Submit</button>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom py-3 bg-secondary">
+        <div class="container text-center text-white">
+            <p class="mb-0">&copy; 2025 Thakur Homestay. All rights reserved.</p>
+        </div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

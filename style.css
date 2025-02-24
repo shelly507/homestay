@@ -1,0 +1,707 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
+    line-height: 1.6;
+    background-image: url(./images/pattern.jpg);
+}
+
+:root {
+    --theme-color: #423a36;
+    --title-color: #113D48;
+    --def-color: #fff;
+    --secondary-color: #cf9d6c;
+}
+
+header {
+    background-color: var(--theme-color);
+    color: var(--def-color);
+}
+
+.brand-title span {
+    color: var(--secondary-color);
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--def-color);
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: var(--secondary-color);
+    transition: color 0.3s ease;
+}
+
+/* banner section  */
+
+.banner-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(./images/banner.bg.jpeg) no-repeat center center;
+    background-size: cover;
+    padding: 80px 20px;
+    color: white;
+    height: 50vh;
+}
+
+.banner-subheading {
+    font-size: 20px;
+}
+
+.banner-heading {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.banner-btn-group {
+    margin-top: 30px;
+}
+
+.banner-btn-explore {
+    background-color: var(--def-color);
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.banner-btn-explore:hover {
+    color: var(--def-color);
+    background-color: var(--secondary-color);
+}
+
+.search-section .form-control {
+    border-radius: 25px;
+}
+
+.input-search,
+.input-days,
+.input-price {
+    border: 1px solid #ced4da;
+}
+
+.select-activity {
+    border: 1px solid #ced4da;
+}
+
+.btn-search {
+    font-size: 16px;
+    padding: 5px 5px;
+    border-radius: 25px;
+    background-color: var(--secondary-color);
+}
+
+.btn-search:hover {
+    background-color: var(--theme-color);
+}
+
+/* Feature Section */
+.feature-row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-item {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.feature-item h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #113D48;
+    margin-top: 15px;
+}
+
+.feature-item p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-top: 10px;
+}
+
+.feature-icon {
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.feature-live-nature {
+    border-right: 2px solid var(--theme-color);
+}
+
+.feature-heritage {
+    border-right: 2px solid var(--theme-color);
+}
+
+.feature-item:last-child {
+    border-right: none;
+}
+
+.feature-item:hover .feature-icon {
+    color: var(--theme-color);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    background: linear-gradient(135deg, #2c221f, #4a3b35);
+    padding: 60px 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.why-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #e6c39b;
+    text-transform: uppercase;
+}
+
+.why-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f5e6d1;
+}
+
+.why-description {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 30px;
+}
+
+.why-feature-item {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+.why-feature-item h5 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.why-feature-icon {
+    font-size: 2rem;
+    color: #e6c39b;
+    margin-right: 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.why-feature-item:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.why-feature-item:hover .why-feature-icon {
+    color: #ffbb64;
+    transform: scale(1.2);
+}
+
+/* Things To Do Section */
+.things-to-do-section {
+    background: #faf6f1;
+    padding: 60px 40px;
+    border-radius: 20px;
+}
+
+.things-content {
+    padding: 20px;
+}
+
+.things-heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--secondary-color);
+}
+
+.things-subheading {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #6c4a32;
+}
+
+.things-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.activity-list {
+    margin-bottom: 15px;
+}
+
+.activity-box {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activity-box i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #e6c39b;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.activity-box:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.activity-box:hover i {
+    color: #ffbb64;
+    transform: scale(1.2);
+}
+
+/* Button */
+.things-button {
+    background: #e6c39b;
+    color: #2a2929;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.things-button:hover {
+    background: #ffbb64;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 187, 100, 0.5);
+}
+
+.things-images {
+    padding: 20px;
+}
+
+.things-img {
+    width: 100%;
+    height: auto;
+}
+
+/* videos ection  */
+.enjoy {
+    background-image: url(./images/video-parallax.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 50vh;
+}
+
+.enjoy h2 {
+    font-size: 6rem;
+}
+
+/* rooms section  */
+.accommodation-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #6c4a32;
+}
+
+.accommodation-subtitle {
+    font-size: 1.5rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Room Cards */
+.room-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.room-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.room-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.room-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #6c4a32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.room-title i {
+    margin-right: 8px;
+    color: #e6c39b;
+}
+
+.room-price {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 10px 0;
+}
+
+.room-btn {
+    background: #e6c39b;
+    color: #2a2929;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    width: 100%;
+}
+
+.room-btn:hover {
+    background: #ffbb64;
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(255, 187, 100, 0.5);
+}
+
+/* experience section */
+.experience-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* This will darken the background */
+    background-blend-mode: overlay;
+}
+
+.stay-dine {
+    background: url('./images/experience-1.jpg') no-repeat center center/cover;
+}
+
+.experience {
+    background: url('./images/experience-2.jpg') no-repeat center center/cover;
+}
+
+.experience-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.experience-content h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* testimonal section  */
+
+.reviews-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.testimonial-item-1,
+.testimonial-item-2,
+.testimonial-item-3 {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.testimonial-content h2 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.author {
+    font-size: 1.2rem;
+    color: #777;
+    font-weight: 600;
+}
+
+.stars {
+    font-size: 1.5rem;
+    color: gold;
+    margin-top: 10px;
+}
+
+.star {
+    margin: 0 2px;
+}
+
+.testimonial-image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testimonial-image {
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* footer section  */
+.footer {
+    background-color: var(--theme-color);
+    color: white;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.footer-column {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+.footer-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li:hover {
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+
+.information p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.information h2 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+
+.subscribe input {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.subscribe .submit-btn {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-column {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .footer-column h3 {
+        margin-top: 20px;
+    }
+
+    .subscribe input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .submit-btn {
+        margin-top: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .reviews-title {
+        font-size: 2rem;
+    }
+
+    .testimonial-item-1,
+    .testimonial-item-2,
+    .testimonial-item-3 {
+        padding: 20px;
+    }
+
+    .testimonial-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-image-container {
+        justify-content: center;
+    }
+
+    .testimonial-image {
+        width: 15%;
+    }
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .reviews-title {
+        font-size: 2rem;
+    }
+
+    .testimonial-item-1,
+    .testimonial-item-2,
+    .testimonial-item-3 {
+        padding: 20px;
+    }
+
+    .testimonial-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-image-container {
+        justify-content: center;
+    }
+
+    .testimonial-image {
+        width: 10%;
+        /* Slightly increase width for smaller screens */
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .experience-box {
+        height: 300px;
+        padding: 30px;
+    }
+
+    .experience-content h2 {
+        font-size: 2rem;
+    }
+
+    .experience-content h4 {
+        font-size: 1.3rem;
+    }
+
+    .experience-content p {
+        font-size: 1rem;
+    }
+}
+
+
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .room-img {
+        height: 200px;
+    }
+
+    .room-title {
+        font-size: 1.2rem;
+    }
+
+    .room-price {
+        font-size: 1rem;
+    }
+}
+
+/* responsive design  */
+@media (max-width: 768px) {
+    .feature-row {
+        flex-direction: column;
+    }
+
+    .feature-item {
+        margin-bottom: 30px;
+        border-right: none;
+    }
+
+    .feature-item .feature-icon {
+        margin-bottom: 10px;
+    }
+
+    .feature-item {
+        text-align: center;
+    }
+}
